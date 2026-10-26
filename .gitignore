@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+outputs/
+models/
+.cache/
+*.safetensors
+*.ckpt
+*.bin
+*.pt
+*.pth
+data/holdout/
+secrets/
+.env
+*.lock.local
