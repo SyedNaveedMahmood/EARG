@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "earg-research-bootstrap"
+version = "0.1.0"
+description = "CPU-only deterministic E0 canary bootstrap for a 12GB multimodal safety research plan"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10,<13", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "jsonschema>=4,<5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

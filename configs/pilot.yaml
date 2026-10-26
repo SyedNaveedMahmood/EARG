@@ -1,0 +1,65 @@
+project: EARG_12GB
+version: pilot_v1
+status: planned_not_run
+hardware:
+  gpu_count: 1
+  nominal_vram_gb: 12
+  target_observed_peak_gib: 10.5
+  simultaneous_gpu_models: false
+image:
+  width: 512
+  height: 512
+  images_per_prompt: 1
+  batch_size: 1
+models:
+  rewriter:
+    id: Qwen/Qwen2.5-3B-Instruct
+    revision: null
+    quantization: 4bit_if_supported
+  multimodal_auditor_optional:
+    id: Qwen/Qwen2.5-VL-3B-Instruct
+    revision: null
+    quantization: 4bit_if_supported
+  generator:
+    id: stable-diffusion-v1-5/stable-diffusion-v1-5
+    revision: null
+    dtype: float16
+    steps: 20
+  editor:
+    id: stable-diffusion-v1-5/stable-diffusion-inpainting
+    revision: null
+    dtype: float16
+sampling:
+  seeds: [101, 202, 303]
+experiments:
+  H0:
+    t2i_smoke: 6
+    editing_smoke: 6
+  E0:
+    positive: 200
+    hard_negative: 200
+    ordinary_negative: 100
+  E1:
+    families: 24
+    intent_variants: [candidate, matched_benign]
+    paths: [direct, system_rewrite]
+  E2:
+    families: 12
+    image_variants: [i0, i1]
+    instruction_variants: [t0, t1]
+  E3:
+    selected_e1_instances: 12
+    incremental_paths: [independent_faithful_rewrite]
+  E4_deferred:
+    families: 16
+    conditions: 3
+  E5_deferred:
+    families: 20
+    paths: 2
+    seeds: 2
+execution:
+  prospective_guard_logging: true
+  shadow_guard_replay: true
+  candidate_image_cache: true
+  require_human_approval_for_gpu_batch: true
+  allow_automatic_model_download: false

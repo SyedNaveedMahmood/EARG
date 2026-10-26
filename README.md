@@ -63,21 +63,3 @@ The initial E1+E2+E3 pilot is **468 unique image operations**, **324** if E2 is 
 ## Where to record work
 
 Use `docs/13_DECISION_LOG.md` for protocol changes, `templates/run_manifest.template.json` for each run, and `docs/14_RESULTS_REPORT_TEMPLATE.md` for measured results. Do not replace blank templates with fabricated examples.
-
-## Repository import status
-
-The initial GitHub commit contains the proposal and Codex instructions. The remaining 44 files (protocols, tests, configurations, templates and starter code) are distributed in the [complete ZIP archive supplied in the ChatGPT project handoff]. The repository is **not yet a complete executable checkout** until that archive has been imported.
-
-To import the full verified package, download `EARG_12GB_Codex_Implementation_Package.zip`, then from a clone of this repository run:
-
-```bash
-python scripts/import_package.py /path/to/EARG_12GB_Codex_Implementation_Package.zip
-python scripts/verify_package.py
-python -m pip install -e '.[dev]'
-python -m pytest -q
-git add -A
-git commit -m "Import complete 12GB EARG experiment package"
-git push origin main
-```
-
-The import script validates SHA-256 hashes for every packaged source file, refuses unknown file overwrites, and does not automatically commit or push. The GPU experiments are not implemented or verified.

@@ -1,0 +1,17 @@
+{
+  "run_id": "<fill-after-actual-run>",
+  "status": "not_run",
+  "git_sha": null,
+  "hardware": null,
+  "cuda": null,
+  "python_version": null,
+  "policy_id": "EARG_SHAPES_RELATION",
+  "policy_version": "1.0",
+  "protocol_sha256": null,
+  "model_revisions": null,
+  "dependency_lock_sha256": null,
+  "start_utc": null,
+  "end_utc": null,
+  "trial_manifest_path": null,
+  "notes": "This is a blank template, not experimental output."
+}

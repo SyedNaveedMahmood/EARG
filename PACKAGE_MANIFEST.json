@@ -1,0 +1,248 @@
+{
+  "package": "EARG 12GB Codex Research Implementation Package",
+  "type": "research_documents_and_cpu_e0_bootstrap",
+  "experimental_status": "GPU experiments not performed; no vulnerability demonstrated",
+  "file_count_excluding_manifest": 48,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 149,
+      "sha256": "b704609819a4e3c0da47379ac36968bfd900c14c89cfb0ca6ddb555e6c3cc26f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3520,
+      "sha256": "4709b1d84c38fdc0d2673be8993b783858fcd94b63fef0ea6d59f554f95eda12"
+    },
+    {
+      "path": "CODEX_START_PROMPT.md",
+      "bytes": 1546,
+      "sha256": "90fabfd6599eaf56b8d1fc97c9970138b1b8561a1ebb537f7d0aa16169598b8d"
+    },
+    {
+      "path": "PROPOSAL_12GB.md",
+      "bytes": 55789,
+      "sha256": "e8cdc7648247bb2eac88232d5b57726f67bb0ab375df08679e84eb542d78e19f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5199,
+      "sha256": "30dbe93f7ddd079be6930142a01523b540eb488e3f3c09245f48b357cb146805"
+    },
+    {
+      "path": "checklists/PHASE_GATES.md",
+      "bytes": 1787,
+      "sha256": "32be36525902f5f6c5d6043195ed4eeab4f8f6a2b69cfb932591061397805290"
+    },
+    {
+      "path": "codex/IMPLEMENTATION_TASKS.md",
+      "bytes": 4032,
+      "sha256": "0a15199ae238c9ec4f7a836175e1968cf5d07b34903680d72501e105f444b74d"
+    },
+    {
+      "path": "codex/PROMPTS.md",
+      "bytes": 2207,
+      "sha256": "d4f50285bc3a5cfcd48c69de94fa938084fbf3fe0de36fc7630e8e258d86a3a8"
+    },
+    {
+      "path": "configs/canary_policy.yaml",
+      "bytes": 768,
+      "sha256": "cc2971d94e401deeccdf0c10dea0fce697e991424e8ec0611ce635ee35cc63a8"
+    },
+    {
+      "path": "configs/pilot.yaml",
+      "bytes": 1447,
+      "sha256": "b329191011848e10ac0fac35b5991a9af3265c3849806baf0eb2835cc4afd68d"
+    },
+    {
+      "path": "docs/01_RESEARCH_CONTRACT.md",
+      "bytes": 3361,
+      "sha256": "e062c6751afe2793d4618fc493ff435ca36ea8df6b9bb102366947211318228a"
+    },
+    {
+      "path": "docs/02_THREAT_MODEL.md",
+      "bytes": 2892,
+      "sha256": "2791e0f2ebebbcaa434e5402bbbdcf9cabe25f129d365cc86b844abf11505b57"
+    },
+    {
+      "path": "docs/03_EXPERIMENT_MATRIX.md",
+      "bytes": 2391,
+      "sha256": "8b9d41aae1330ed384c686594f39e5af24bb4a292ed0a3a36a3b335410d9fde8"
+    },
+    {
+      "path": "docs/04_DATA_SPEC.md",
+      "bytes": 3017,
+      "sha256": "4467210d0771b187db4d92252196fe75066d85702dae6a726302f2e38edb3eeb"
+    },
+    {
+      "path": "docs/05_HARDWARE_12GB.md",
+      "bytes": 3258,
+      "sha256": "6f4278e0835d162666265cf4c8d23cc79658c872cfb644d0ee22ce7d0cdbe9b2"
+    },
+    {
+      "path": "docs/06_IMPLEMENTATION_ROADMAP.md",
+      "bytes": 2513,
+      "sha256": "d0b998030b77ec1ff85e0e15a655fcf4c9a108a4049564b130e3a29d92206bf1"
+    },
+    {
+      "path": "docs/07_EVALUATION_STATISTICS.md",
+      "bytes": 3446,
+      "sha256": "235fa5ae00c872a3716b7a2437b5aa003cad350c9aa436ca6da37d34c2985c70"
+    },
+    {
+      "path": "docs/08_NOVELTY_AUDIT.md",
+      "bytes": 2712,
+      "sha256": "3435643a1b48231246d09795916a32d0ccf9fca20e2ae043720e465dcaea73d6"
+    },
+    {
+      "path": "docs/09_ETHICS_AND_RELEASE.md",
+      "bytes": 1930,
+      "sha256": "434b11d7fb20bba99235d1537ab5a181678db3e7804272c1167bb5019096922c"
+    },
+    {
+      "path": "docs/10_ANNOTATION_GUIDE.md",
+      "bytes": 2342,
+      "sha256": "3dbfad2c8ee694ffc34ae67bf43ca09386b707ad28d5275b95c25b5292f98421"
+    },
+    {
+      "path": "docs/11_PAPER_OUTLINE.md",
+      "bytes": 2343,
+      "sha256": "dd3d57ee09ccce165819b2418dd7f00e2dcb869cc0db4f2eecc15c63c77ebbf5"
+    },
+    {
+      "path": "docs/12_REFERENCES.md",
+      "bytes": 3916,
+      "sha256": "8bd084607ec63d4580035f1dfd7d3dd55b6176500a10522444a39d2133522fc3"
+    },
+    {
+      "path": "docs/13_DECISION_LOG.md",
+      "bytes": 827,
+      "sha256": "8f6a115402c82381bf9a9e5d23a10628a6fd9e953662e8f65222fac80ca807b4"
+    },
+    {
+      "path": "docs/14_RESULTS_REPORT_TEMPLATE.md",
+      "bytes": 1884,
+      "sha256": "755bff34b2ef5bf4aee499a43ef19660a71da42c474b624e0027887de291d1b1"
+    },
+    {
+      "path": "docs/15_RISK_REGISTER.md",
+      "bytes": 1660,
+      "sha256": "0b58a37484262efeb497294885ddff314ab5a094d157cb3bf37ae03b25e62e3f"
+    },
+    {
+      "path": "docs/16_HANDOFF_STATUS.md",
+      "bytes": 1148,
+      "sha256": "497e34778e7c8b38d738bf17674e763d48c24e2731d7396264851d7f128be6cc"
+    },
+    {
+      "path": "docs/17_SOURCE_PROVENANCE.md",
+      "bytes": 1118,
+      "sha256": "06dfa7c7f19309b5b4f6d8917814c12e3fac7d6e1df80d3ec6193ad72cdd7f54"
+    },
+    {
+      "path": "protocols/E0_CPU_POLICY_VALIDATION.md",
+      "bytes": 1671,
+      "sha256": "466c9006cc4750147d1ef78b8d91b9301892b4635c6406492a2c3326029ab47c"
+    },
+    {
+      "path": "protocols/E1_CHECKPOINT_AUDIT.md",
+      "bytes": 2232,
+      "sha256": "19f26d48a766033a79a51c1a76172c2caaedcf62061a12d8e6a2d1cc324606d8"
+    },
+    {
+      "path": "protocols/E2_EDIT_COMPOSITION.md",
+      "bytes": 1413,
+      "sha256": "8df4242e30d9a5f69cf25f51abc874fec56ea2d612c262a796949431f9db340a"
+    },
+    {
+      "path": "protocols/E3_REWRITE_LOCALIZATION.md",
+      "bytes": 1516,
+      "sha256": "94b00a0b41d886771a2067a34614b0d67542180eeee5c593cb17ccb2d96ab152"
+    },
+    {
+      "path": "protocols/E4_SESSION_POLICY_DEFERRED.md",
+      "bytes": 752,
+      "sha256": "7fd6d65c46eb0ff33f4e9869e2cbe8b924f2370b7322dcc4a1a468c5a7001f07"
+    },
+    {
+      "path": "protocols/E5_REPLICATION_DEFERRED.md",
+      "bytes": 685,
+      "sha256": "8432d715bba0b5be755a3a4799ef7159bfbc29967137b77cdba460d2faf22709"
+    },
+    {
+      "path": "protocols/H0_HARDWARE_QUALIFICATION.md",
+      "bytes": 1506,
+      "sha256": "e48964690a8241824541efcb57171b9d408fc3e3e99953d2607345f98ff4bc7f"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 510,
+      "sha256": "3698909100998bb8f1d3e8d280794121d6504cff56a94f9d9dad547ea8319c83"
+    },
+    {
+      "path": "schemas/trial.schema.json",
+      "bytes": 3672,
+      "sha256": "8f9f41f140a09cc45f76bbf0baffa666996ffe6ee40866b02f4404ae7066f8a0"
+    },
+    {
+      "path": "scripts/hardware_probe.py",
+      "bytes": 955,
+      "sha256": "940bbd3cd9110b01e04f3216857e1f4cb33ebbb2681a36aff378e9beaae5b8a9"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 1887,
+      "sha256": "469af80a5a50d309eefb52fcc1c8343d1d7e406707afc05e5c619a05ad65926c"
+    },
+    {
+      "path": "src/earg/__init__.py",
+      "bytes": 91,
+      "sha256": "55e941c3d8d531864a2bcaf3c18928bf5b056e6572018b0f862485f8cd250c2e"
+    },
+    {
+      "path": "src/earg/canary.py",
+      "bytes": 3769,
+      "sha256": "469851b02b2c12a35762de8a0cbfbcc94384d3f75f0c7df2edd832d41d1eaea6"
+    },
+    {
+      "path": "src/earg/run_e0.py",
+      "bytes": 2568,
+      "sha256": "37bd802d7f75a26cda9b10d2a24b71870961b3a7d355e493707b0c42326c6428"
+    },
+    {
+      "path": "templates/annotation_sheet.csv",
+      "bytes": 121,
+      "sha256": "caba68f04f0705c67c0b0dd48a7851fcf48ac8c240125c66bb6bd05b81a9121e"
+    },
+    {
+      "path": "templates/novelty_comparison.csv",
+      "bytes": 164,
+      "sha256": "3d1ccd3f84441145161deefb96e90ab226fd69bda5f51054b0a6d724570a84aa"
+    },
+    {
+      "path": "templates/run_manifest.template.json",
+      "bytes": 436,
+      "sha256": "987ee41e3bb3bd3cb8c5a7e7ac7f4a04593113aaaeff0ee68ae7660817577c16"
+    },
+    {
+      "path": "templates/trial_schedule.csv",
+      "bytes": 121,
+      "sha256": "05370ac01043413f981b3cc79094e0144d9b845e4d9262057f4a5a735481a10f"
+    },
+    {
+      "path": "tests/test_canary.py",
+      "bytes": 1008,
+      "sha256": "4e5cc012dfbc5d3508de909ea750002c22e6ceb56084f00726c957e426c79b88"
+    },
+    {
+      "path": "tests/test_config.py",
+      "bytes": 542,
+      "sha256": "1717441242dbb0c7d468b684b23a9b1c36dcfe4ecd559fe6e23a8404524e9eb2"
+    },
+    {
+      "path": "tests/test_e0.py",
+      "bytes": 773,
+      "sha256": "8d6f80e9bca8c5160b3a272d07cdc39b2b259bdb8f0ea7b1d2622caffd24ddc5"
+    }
+  ]
+}

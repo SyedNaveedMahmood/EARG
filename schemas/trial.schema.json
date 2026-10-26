@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EARG trial record (pilot)",
+  "type": "object",
+  "required": [
+    "run_id",
+    "trial_id",
+    "stage",
+    "task_family_id",
+    "split",
+    "policy_id",
+    "policy_version",
+    "status",
+    "evaluation_mode"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trial_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "enum": [
+        "H0",
+        "E0",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    },
+    "task_family_id": {
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "calibration",
+        "discovery",
+        "diagnostic",
+        "holdout",
+        "smoke"
+      ]
+    },
+    "policy_id": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "started",
+        "succeeded",
+        "oom",
+        "failed",
+        "invalid",
+        "not_run"
+      ]
+    },
+    "evaluation_mode": {
+      "enum": [
+        "actual",
+        "shadow_replay",
+        "not_applicable"
+      ]
+    },
+    "intent_variant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "generator_model_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generator_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "input_prompt_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rewritten_prompt_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "input_image_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mask_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifact_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifact_label": {
+      "enum": [
+        "positive",
+        "negative",
+        "ambiguous",
+        "unrenderable",
+        null
+      ]
+    },
+    "pre_guard_decision": {
+      "enum": [
+        "allow",
+        "refuse",
+        "abstain",
+        "not_run",
+        null
+      ]
+    },
+    "mid_guard_decision": {
+      "enum": [
+        "allow",
+        "refuse",
+        "abstain",
+        "not_run",
+        null
+      ]
+    },
+    "peak_device_gib": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "peak_cuda_allocated_gib": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "peak_cuda_reserved_gib": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wall_time_sec": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "timestamp_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_trace": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "required": [
+          "stage",
+          "decision",
+          "time_utc"
+        ],
+        "properties": {
+          "stage": {
+            "type": "string"
+          },
+          "decision": {
+            "enum": [
+              "allow",
+              "refuse",
+              "abstain",
+              "not_run"
+            ]
+          },
+          "time_utc": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
